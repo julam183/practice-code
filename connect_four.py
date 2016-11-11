@@ -408,13 +408,13 @@ def game_loop(screen, clock, mode, level=None):
 
             winner = determine_winner(b.grid)
             if winner:
-                print "********************"
-                print "Player %s WINS!!" % (winner)
-                print "********************"
+                print ("********************")
+                print ("Player %s WINS!!" % (winner))
+                print ("********************")
                 piece = None
                 mode = None
                 pprint.pprint(b.grid)
-                print "Please press 'r' to restart game"
+                print ("Please press 'r' to restart game")
             else:
                 piece = Piece(screen, next_player, (int(width*0.75), height/2))
 
@@ -434,9 +434,9 @@ if __name__ == '__main__':
 
     computer = False
 
-    print "Welcome to Connect Four!"
-    print "Please move a piece, select keys 1-7, or select 'a' to automate game"
-    print "Select 'c' if you want to play against the computer (you are red)"
+    print ("Welcome to Connect Four!")
+    print ("Please move a piece, select keys 1-7, or select 'a' to automate game")
+    print ("Select 'c' if you want to play against the computer (you are red)")
 
     mode = setup_loop(screen)
     game_loop(screen, clock, mode)

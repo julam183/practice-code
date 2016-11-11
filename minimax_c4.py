@@ -239,7 +239,7 @@ if __name__ == '__main__':
 
     pp.pprint(board)
     max_depth = 5
-    print recur_add_player_depth(board, MAX, max_depth)
+    print (recur_add_player_depth(board, MAX, max_depth))
 
 '''
     assert no_more_moves(board) == False
